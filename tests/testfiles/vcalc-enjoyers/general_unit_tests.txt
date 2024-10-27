@@ -1,0 +1,28 @@
+int a = 1;
+int b = 2;
+if (b - a)
+    print(b - a);
+    loop (b - a)
+        print(b);
+        print(a);
+        a = a + 1;
+    pool;
+    a = 4*(3 + 1 > 0) /  2 + 5;
+    if (a - b)
+        loop (a - b)
+            print(b);
+            print(a);
+            a = a - 1;
+        pool; 
+    fi;
+fi;
+vector e = 1..2;
+vector f = [i in 1..5 | i];
+vector g = [i in 1..5 & i > 2];
+print(e + f - g);
+print(e + f * g);
+print(e + f / g);
+print(e * f == g);
+print(e * f - g);
+print(e > f / g);
+//CHECK_FILE:./general_unit_tests.out

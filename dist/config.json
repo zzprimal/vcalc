@@ -1,0 +1,41 @@
+{
+    "generation-options": {
+        "max-expression-recursion-depth": 3,
+        "max-conditionals-loops": 10
+    },
+    "properties": {
+        "max-range-length": 256,
+        "id-length": {
+            "min": 1,
+            "max": 20
+        }
+    },
+    "expression-weights": {
+        "+": 80,
+        "-": 80,
+        "*": 80,
+        "/": 80,
+        "<": 20,
+        ">": 20,
+        "==": 20,
+        "!=": 20,
+        "()": 30,
+        "range": 30,
+        "index": 30,
+        "generator": 30,
+        "filter": 30,
+        "id": 100,
+        "int": 100,
+        "max-int": 1,
+        "min-int": 1
+    },
+    "statement-weights": {
+        "int-declaration": 50,
+        "vec-declaration": 50,
+        "assignment": 50,
+        "conditional": 50,
+        "loop": 50,
+        "print": 50
+    },
+    "block-terminate-probability": 0.2
+}

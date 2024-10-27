@@ -1,0 +1,5 @@
+int Jis = (0 - 2147483647 - 1) / 36763;
+vector fl0bPl = Jis..Jis;
+print(17866 > 2147483486..2147483647 > 37320);
+
+//CHECK_FILE:./test3.out

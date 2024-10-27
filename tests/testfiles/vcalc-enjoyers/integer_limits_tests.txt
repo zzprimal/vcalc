@@ -1,0 +1,9 @@
+int var123 = (0 - 2147483647) / 100000;
+print(var123);
+vector var = 1..214740364;
+int var124 = 2147483647;
+print(var[2147483] - var124);
+print(0 - var124);
+vector l = 1..60;
+print(l[var[2147483]] + l[var[21]] + l[var[2147]] - l[var[0 - 1]] + l[var[0 - 2147483647 - 1]]);
+//CHECK_FILE:./integer_limits_tests.out

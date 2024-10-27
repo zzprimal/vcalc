@@ -1,0 +1,24 @@
+vector a = [i in 0..20 | i];
+vector i = [i in 0..6 | i];
+print(a + i);
+print([a in a | a*2 + 1]);
+print([a in i | a*2 + 1]);
+print([i in a | i*2 + 1]);
+print([i in [i in [i in [i in a+i[4]..17 | i] | i] | i] | i*2 + 1]);
+print([i in [i in [i in [i in 12..3 | i] | i] | i] | i*2 + 1]);
+print([a in a | a*2 + 1] + [i in 0..20 | i]);
+print([a in a | a*2 + 1] - [i in 0..20 | i]);
+print([a in a | a*2 + 1] * [i in 0..20 | i]);
+print([a in a | a*2 + 1] / [i in 1..20 | i]);
+print([a in a | a*2 + 1] == [i in 0..20 | i]);
+print([a in a | a*2 + 1] != [i in 0..20 | i]);
+print([a in a | a*2 + 1] > [i in 0..20 | i]);
+print([a in a | a*2 + 1] < [i in 0..20 | i]);
+vector b = 32436..32436;
+if (1)
+    b = [Y in 1..6 & Y];
+fi;
+int Y = 2;
+print(Y);
+Y = 3;
+//CHECK_FILE:./generator_and_filter_unit_tests.out
